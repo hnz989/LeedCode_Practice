@@ -32,9 +32,7 @@ Because the 4th row is incomplete, we return 3.
 */
 class Solution {
     public int arrangeCoins(int n) {
-            int temp = (int) Math.sqrt(0.25+(2*n));
-            int result = (int) (temp-0.5);
-            return result;
+        int m = (int) (Math.sqrt(2*(long)n+0.25)-0.5);
+        return m;
     }
-    
 }
